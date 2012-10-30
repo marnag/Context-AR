@@ -18,24 +18,9 @@
 		5B0D3C671638919A00E70D73 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D3C661638919A00E70D73 /* Default-568h@2x.png */; };
 		5B0D3C6A1638919A00E70D73 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D3C681638919A00E70D73 /* MainStoryboard.storyboard */; };
 		5B0D3C6D1638919A00E70D73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3C6C1638919A00E70D73 /* ViewController.m */; };
-		5B0D3C751638919A00E70D73 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B0D3C741638919A00E70D73 /* SenTestingKit.framework */; };
-		5B0D3C761638919A00E70D73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B0D3C501638919A00E70D73 /* UIKit.framework */; };
-		5B0D3C771638919A00E70D73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B0D3C521638919A00E70D73 /* Foundation.framework */; };
-		5B0D3C7F1638919A00E70D73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D3C7D1638919A00E70D73 /* InfoPlist.strings */; };
-		5B0D3C821638919A00E70D73 /* masterARTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3C811638919A00E70D73 /* masterARTests.m */; };
 		5B0D3CA4163B080B00E70D73 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B0D3CA3163B080B00E70D73 /* MapKit.framework */; };
 		5B0D3CA7163B081500E70D73 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B0D3CA6163B081500E70D73 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5B0D3C781638919A00E70D73 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5B0D3C431638919A00E70D73 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B0D3C4B1638919A00E70D73;
-			remoteInfo = masterAR;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5B0D3C4C1638919A00E70D73 /* masterAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = masterAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,12 +39,7 @@
 		5B0D3C691638919A00E70D73 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		5B0D3C6B1638919A00E70D73 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5B0D3C6C1638919A00E70D73 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5B0D3C731638919A00E70D73 /* masterARTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = masterARTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B0D3C741638919A00E70D73 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		5B0D3C7C1638919A00E70D73 /* masterARTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "masterARTests-Info.plist"; sourceTree = "<group>"; };
-		5B0D3C7E1638919A00E70D73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5B0D3C801638919A00E70D73 /* masterARTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = masterARTests.h; sourceTree = "<group>"; };
-		5B0D3C811638919A00E70D73 /* masterARTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = masterARTests.m; sourceTree = "<group>"; };
 		5B0D3CA3163B080B00E70D73 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5B0D3CA6163B081500E70D73 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -77,16 +57,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B0D3C6F1638919A00E70D73 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B0D3C751638919A00E70D73 /* SenTestingKit.framework in Frameworks */,
-				5B0D3C761638919A00E70D73 /* UIKit.framework in Frameworks */,
-				5B0D3C771638919A00E70D73 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -94,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				5B0D3C561638919A00E70D73 /* masterAR */,
-				5B0D3C7A1638919A00E70D73 /* masterARTests */,
 				5B0D3C4F1638919A00E70D73 /* Frameworks */,
 				5B0D3C4D1638919A00E70D73 /* Products */,
 			);
@@ -104,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				5B0D3C4C1638919A00E70D73 /* masterAR.app */,
-				5B0D3C731638919A00E70D73 /* masterARTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,25 +117,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5B0D3C7A1638919A00E70D73 /* masterARTests */ = {
-			isa = PBXGroup;
-			children = (
-				5B0D3C801638919A00E70D73 /* masterARTests.h */,
-				5B0D3C811638919A00E70D73 /* masterARTests.m */,
-				5B0D3C7B1638919A00E70D73 /* Supporting Files */,
-			);
-			path = masterARTests;
-			sourceTree = "<group>";
-		};
-		5B0D3C7B1638919A00E70D73 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5B0D3C7C1638919A00E70D73 /* masterARTests-Info.plist */,
-				5B0D3C7D1638919A00E70D73 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,25 +136,6 @@
 			productName = masterAR;
 			productReference = 5B0D3C4C1638919A00E70D73 /* masterAR.app */;
 			productType = "com.apple.product-type.application";
-		};
-		5B0D3C721638919A00E70D73 /* masterARTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B0D3C881638919A00E70D73 /* Build configuration list for PBXNativeTarget "masterARTests" */;
-			buildPhases = (
-				5B0D3C6E1638919A00E70D73 /* Sources */,
-				5B0D3C6F1638919A00E70D73 /* Frameworks */,
-				5B0D3C701638919A00E70D73 /* Resources */,
-				5B0D3C711638919A00E70D73 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5B0D3C791638919A00E70D73 /* PBXTargetDependency */,
-			);
-			name = masterARTests;
-			productName = masterARTests;
-			productReference = 5B0D3C731638919A00E70D73 /* masterARTests.octest */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -229,7 +159,6 @@
 			projectRoot = "";
 			targets = (
 				5B0D3C4B1638919A00E70D73 /* masterAR */,
-				5B0D3C721638919A00E70D73 /* masterARTests */,
 			);
 		};
 /* End PBXProject section */
@@ -247,31 +176,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B0D3C701638919A00E70D73 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B0D3C7F1638919A00E70D73 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5B0D3C711638919A00E70D73 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B0D3C481638919A00E70D73 /* Sources */ = {
@@ -284,23 +189,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B0D3C6E1638919A00E70D73 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B0D3C821638919A00E70D73 /* masterARTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5B0D3C791638919A00E70D73 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B0D3C4B1638919A00E70D73 /* masterAR */;
-			targetProxy = 5B0D3C781638919A00E70D73 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5B0D3C591638919A00E70D73 /* InfoPlist.strings */ = {
@@ -317,14 +206,6 @@
 				5B0D3C691638919A00E70D73 /* en */,
 			);
 			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
-		5B0D3C7D1638919A00E70D73 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5B0D3C7E1638919A00E70D73 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -404,40 +285,6 @@
 			};
 			name = Release;
 		};
-		5B0D3C891638919A00E70D73 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/masterAR.app/masterAR";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "masterAR/masterAR-Prefix.pch";
-				INFOPLIST_FILE = "masterARTests/masterARTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		5B0D3C8A1638919A00E70D73 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/masterAR.app/masterAR";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "masterAR/masterAR-Prefix.pch";
-				INFOPLIST_FILE = "masterARTests/masterARTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -455,15 +302,6 @@
 			buildConfigurations = (
 				5B0D3C861638919A00E70D73 /* Debug */,
 				5B0D3C871638919A00E70D73 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5B0D3C881638919A00E70D73 /* Build configuration list for PBXNativeTarget "masterARTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B0D3C891638919A00E70D73 /* Debug */,
-				5B0D3C8A1638919A00E70D73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
