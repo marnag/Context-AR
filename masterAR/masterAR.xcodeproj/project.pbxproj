@@ -293,6 +293,7 @@
 				GCC_PREFIX_HEADER = "masterAR/masterAR-Prefix.pch";
 				INFOPLIST_FILE = "masterAR/masterAR-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -305,6 +306,7 @@
 				GCC_PREFIX_HEADER = "masterAR/masterAR-Prefix.pch";
 				INFOPLIST_FILE = "masterAR/masterAR-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
