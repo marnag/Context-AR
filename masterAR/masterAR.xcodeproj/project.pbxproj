@@ -12,14 +12,21 @@
 		5B0D3C551638919A00E70D73 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B0D3C541638919A00E70D73 /* CoreGraphics.framework */; };
 		5B0D3C5B1638919A00E70D73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D3C591638919A00E70D73 /* InfoPlist.strings */; };
 		5B0D3C5D1638919A00E70D73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3C5C1638919A00E70D73 /* main.m */; };
-		5B0D3C611638919A00E70D73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3C601638919A00E70D73 /* AppDelegate.m */; };
 		5B0D3C631638919A00E70D73 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D3C621638919A00E70D73 /* Default.png */; };
 		5B0D3C651638919A00E70D73 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D3C641638919A00E70D73 /* Default@2x.png */; };
 		5B0D3C671638919A00E70D73 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D3C661638919A00E70D73 /* Default-568h@2x.png */; };
-		5B0D3C6A1638919A00E70D73 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D3C681638919A00E70D73 /* MainStoryboard.storyboard */; };
-		5B0D3C6D1638919A00E70D73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3C6C1638919A00E70D73 /* ViewController.m */; };
-		5B0D3CA4163B080B00E70D73 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B0D3CA3163B080B00E70D73 /* MapKit.framework */; };
 		5B0D3CA7163B081500E70D73 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B0D3CA6163B081500E70D73 /* CoreLocation.framework */; };
+		5BC18ECF1640592100737A50 /* ARView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18EC61640592100737A50 /* ARView.m */; };
+		5BC18ED01640592100737A50 /* PlaceOfInterest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18EC81640592100737A50 /* PlaceOfInterest.m */; };
+		5BC18ED11640592100737A50 /* pARkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18ECA1640592100737A50 /* pARkViewController.m */; };
+		5BC18ED21640592100737A50 /* pARkAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18ECC1640592100737A50 /* pARkAppDelegate.m */; };
+		5BC18ED31640592100737A50 /* pARkViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC18ECD1640592100737A50 /* pARkViewController_iPhone.xib */; };
+		5BC18ED41640592100737A50 /* pARkViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC18ECE1640592100737A50 /* pARkViewController_iPad.xib */; };
+		5BC18ED6164059C800737A50 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC18ED5164059C800737A50 /* QuartzCore.framework */; };
+		5BC18ED8164059D000737A50 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC18ED7164059D000737A50 /* OpenGLES.framework */; };
+		5BC18EDA164059D900737A50 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC18ED9164059D900737A50 /* AssetsLibrary.framework */; };
+		5BC18EDC164059DE00737A50 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC18EDB164059DE00737A50 /* AVFoundation.framework */; };
+		5BC18EDE164059F100737A50 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC18EDD164059F100737A50 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,17 +38,25 @@
 		5B0D3C5A1638919A00E70D73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5B0D3C5C1638919A00E70D73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5B0D3C5E1638919A00E70D73 /* masterAR-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "masterAR-Prefix.pch"; sourceTree = "<group>"; };
-		5B0D3C5F1638919A00E70D73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5B0D3C601638919A00E70D73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5B0D3C621638919A00E70D73 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5B0D3C641638919A00E70D73 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5B0D3C661638919A00E70D73 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		5B0D3C691638919A00E70D73 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		5B0D3C6B1638919A00E70D73 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5B0D3C6C1638919A00E70D73 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5B0D3C741638919A00E70D73 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		5B0D3CA3163B080B00E70D73 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5B0D3CA6163B081500E70D73 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5BC18EC51640592100737A50 /* ARView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARView.h; sourceTree = "<group>"; };
+		5BC18EC61640592100737A50 /* ARView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARView.m; sourceTree = "<group>"; };
+		5BC18EC71640592100737A50 /* PlaceOfInterest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceOfInterest.h; sourceTree = "<group>"; };
+		5BC18EC81640592100737A50 /* PlaceOfInterest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceOfInterest.m; sourceTree = "<group>"; };
+		5BC18EC91640592100737A50 /* pARkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pARkViewController.h; sourceTree = "<group>"; };
+		5BC18ECA1640592100737A50 /* pARkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pARkViewController.m; sourceTree = "<group>"; };
+		5BC18ECB1640592100737A50 /* pARkAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pARkAppDelegate.h; sourceTree = "<group>"; };
+		5BC18ECC1640592100737A50 /* pARkAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pARkAppDelegate.m; sourceTree = "<group>"; };
+		5BC18ECD1640592100737A50 /* pARkViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pARkViewController_iPhone.xib; sourceTree = "<group>"; };
+		5BC18ECE1640592100737A50 /* pARkViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pARkViewController_iPad.xib; sourceTree = "<group>"; };
+		5BC18ED5164059C800737A50 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5BC18ED7164059D000737A50 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		5BC18ED9164059D900737A50 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		5BC18EDB164059DE00737A50 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5BC18EDD164059F100737A50 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,8 +64,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BC18EDE164059F100737A50 /* CoreMotion.framework in Frameworks */,
+				5BC18EDC164059DE00737A50 /* AVFoundation.framework in Frameworks */,
+				5BC18EDA164059D900737A50 /* AssetsLibrary.framework in Frameworks */,
+				5BC18ED8164059D000737A50 /* OpenGLES.framework in Frameworks */,
+				5BC18ED6164059C800737A50 /* QuartzCore.framework in Frameworks */,
 				5B0D3CA7163B081500E70D73 /* CoreLocation.framework in Frameworks */,
-				5B0D3CA4163B080B00E70D73 /* MapKit.framework in Frameworks */,
 				5B0D3C511638919A00E70D73 /* UIKit.framework in Frameworks */,
 				5B0D3C531638919A00E70D73 /* Foundation.framework in Frameworks */,
 				5B0D3C551638919A00E70D73 /* CoreGraphics.framework in Frameworks */,
@@ -80,12 +99,15 @@
 		5B0D3C4F1638919A00E70D73 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5B0D3CA3163B080B00E70D73 /* MapKit.framework */,
+				5BC18EDD164059F100737A50 /* CoreMotion.framework */,
+				5BC18EDB164059DE00737A50 /* AVFoundation.framework */,
+				5BC18ED9164059D900737A50 /* AssetsLibrary.framework */,
+				5BC18ED7164059D000737A50 /* OpenGLES.framework */,
+				5BC18ED5164059C800737A50 /* QuartzCore.framework */,
 				5B0D3CA6163B081500E70D73 /* CoreLocation.framework */,
 				5B0D3C501638919A00E70D73 /* UIKit.framework */,
 				5B0D3C521638919A00E70D73 /* Foundation.framework */,
 				5B0D3C541638919A00E70D73 /* CoreGraphics.framework */,
-				5B0D3C741638919A00E70D73 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,11 +115,16 @@
 		5B0D3C561638919A00E70D73 /* masterAR */ = {
 			isa = PBXGroup;
 			children = (
-				5B0D3C5F1638919A00E70D73 /* AppDelegate.h */,
-				5B0D3C601638919A00E70D73 /* AppDelegate.m */,
-				5B0D3C681638919A00E70D73 /* MainStoryboard.storyboard */,
-				5B0D3C6B1638919A00E70D73 /* ViewController.h */,
-				5B0D3C6C1638919A00E70D73 /* ViewController.m */,
+				5BC18EC51640592100737A50 /* ARView.h */,
+				5BC18EC61640592100737A50 /* ARView.m */,
+				5BC18EC71640592100737A50 /* PlaceOfInterest.h */,
+				5BC18EC81640592100737A50 /* PlaceOfInterest.m */,
+				5BC18EC91640592100737A50 /* pARkViewController.h */,
+				5BC18ECA1640592100737A50 /* pARkViewController.m */,
+				5BC18ECB1640592100737A50 /* pARkAppDelegate.h */,
+				5BC18ECC1640592100737A50 /* pARkAppDelegate.m */,
+				5BC18ECD1640592100737A50 /* pARkViewController_iPhone.xib */,
+				5BC18ECE1640592100737A50 /* pARkViewController_iPad.xib */,
 				5B0D3C571638919A00E70D73 /* Supporting Files */,
 			);
 			path = masterAR;
@@ -172,7 +199,8 @@
 				5B0D3C631638919A00E70D73 /* Default.png in Resources */,
 				5B0D3C651638919A00E70D73 /* Default@2x.png in Resources */,
 				5B0D3C671638919A00E70D73 /* Default-568h@2x.png in Resources */,
-				5B0D3C6A1638919A00E70D73 /* MainStoryboard.storyboard in Resources */,
+				5BC18ED31640592100737A50 /* pARkViewController_iPhone.xib in Resources */,
+				5BC18ED41640592100737A50 /* pARkViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,8 +212,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B0D3C5D1638919A00E70D73 /* main.m in Sources */,
-				5B0D3C611638919A00E70D73 /* AppDelegate.m in Sources */,
-				5B0D3C6D1638919A00E70D73 /* ViewController.m in Sources */,
+				5BC18ECF1640592100737A50 /* ARView.m in Sources */,
+				5BC18ED01640592100737A50 /* PlaceOfInterest.m in Sources */,
+				5BC18ED11640592100737A50 /* pARkViewController.m in Sources */,
+				5BC18ED21640592100737A50 /* pARkAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,14 +228,6 @@
 				5B0D3C5A1638919A00E70D73 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		5B0D3C681638919A00E70D73 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5B0D3C691638919A00E70D73 /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -266,6 +288,7 @@
 		5B0D3C861638919A00E70D73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "masterAR/masterAR-Prefix.pch";
 				INFOPLIST_FILE = "masterAR/masterAR-Info.plist";
@@ -277,6 +300,7 @@
 		5B0D3C871638919A00E70D73 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "masterAR/masterAR-Prefix.pch";
 				INFOPLIST_FILE = "masterAR/masterAR-Info.plist";
