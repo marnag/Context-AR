@@ -72,14 +72,18 @@
                               "Balboa Park SD",
                               "Hyde Park UK",
                               "Mont Royal QC",
-                              "Retiro Park ES"};
+                              "Retiro Park ES",
+                              "Vest for BFE",
+                              "Sør for BFE"};
 	
     CLLocationCoordinate2D poiCoords[] = {{40.7711329, -73.9741874},
                                           {37.7690400, -122.4835193},
                                           {32.7343822, -117.1441227},
                                           {51.5068670, -0.1708030},
                                           {45.5126399, -73.6802448},
-                                          {40.4152519, -3.6887466}};
+                                          {40.4152519, -3.6887466},
+                                          {69.682687, 18.972089},
+                                          {69.682132, 18.972722}};
                                           
     int numPois = sizeof(poiCoords) / sizeof(CLLocationCoordinate2D);	
 		
