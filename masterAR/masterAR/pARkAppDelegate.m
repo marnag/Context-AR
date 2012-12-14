@@ -58,12 +58,12 @@
 {
     // Override point for customization after application launch.
 	_window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-	    _viewController = [[pARkViewController alloc] initWithNibName:@"pARkViewController_iPhone" bundle:nil]; 
-	} else {
-	    _viewController = [[pARkViewController alloc] initWithNibName:@"pARkViewController_iPad" bundle:nil]; 
-	}
-	self.window.rootViewController = self.viewController;
+//     _viewController = [[pARkViewController alloc] initWithNibName:@"pARkViewController_iPad" bundle:nil];
+//    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+//    _viewController = [sb instantiateViewControllerWithIdentifier:@"pARkViewController"];
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    _viewController = [sb instantiateViewControllerWithIdentifier:@"FirstSB"];
+    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
