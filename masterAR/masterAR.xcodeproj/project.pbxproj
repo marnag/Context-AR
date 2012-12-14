@@ -16,6 +16,7 @@
 		5B0D3C651638919A00E70D73 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D3C641638919A00E70D73 /* Default@2x.png */; };
 		5B0D3C671638919A00E70D73 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D3C661638919A00E70D73 /* Default-568h@2x.png */; };
 		5B0D3CA7163B081500E70D73 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B0D3CA6163B081500E70D73 /* CoreLocation.framework */; };
+		5B8A374F1645952D00CEF093 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8A374E1645952D00CEF093 /* MainStoryboard.storyboard */; };
 		5BC18ECF1640592100737A50 /* ARView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18EC61640592100737A50 /* ARView.m */; };
 		5BC18ED01640592100737A50 /* PlaceOfInterest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18EC81640592100737A50 /* PlaceOfInterest.m */; };
 		5BC18ED11640592100737A50 /* pARkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18ECA1640592100737A50 /* pARkViewController.m */; };
@@ -43,6 +44,7 @@
 		5B0D3C641638919A00E70D73 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5B0D3C661638919A00E70D73 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5B0D3CA6163B081500E70D73 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5B8A374E1645952D00CEF093 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		5BC18EC51640592100737A50 /* ARView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARView.h; sourceTree = "<group>"; };
 		5BC18EC61640592100737A50 /* ARView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARView.m; sourceTree = "<group>"; };
 		5BC18EC71640592100737A50 /* PlaceOfInterest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceOfInterest.h; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				5BC18ECD1640592100737A50 /* pARkViewController_iPhone.xib */,
 				5BC18ECE1640592100737A50 /* pARkViewController_iPad.xib */,
 				5B0D3C571638919A00E70D73 /* Supporting Files */,
+				5B8A374E1645952D00CEF093 /* MainStoryboard.storyboard */,
 			);
 			path = masterAR;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				5BC18ED31640592100737A50 /* pARkViewController_iPhone.xib in Resources */,
 				5BC18ED41640592100737A50 /* pARkViewController_iPad.xib in Resources */,
 				5BC18EEC1645449D00737A50 /* Icon-72.png in Resources */,
+				5B8A374F1645952D00CEF093 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
