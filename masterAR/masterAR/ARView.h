@@ -1,4 +1,7 @@
 /*
+ 
+ test2
+ 
      File: ARView.h
  Abstract: Augmented reality view. Displays a live camera feed with specified places-of-interest overlayed in the correct position based on the direction the user is looking. Uses Core Location to determine the user's location relative the places-of-interest and Core Motion to determine the direction the user is looking.
   Version: 1.0
