@@ -17,6 +17,8 @@
 		5B0D3C671638919A00E70D73 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D3C661638919A00E70D73 /* Default-568h@2x.png */; };
 		5B0D3CA7163B081500E70D73 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B0D3CA6163B081500E70D73 /* CoreLocation.framework */; };
 		5B8A374F1645952D00CEF093 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8A374E1645952D00CEF093 /* MainStoryboard.storyboard */; };
+		5B9D71CC167CD20900A13564 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D71CB167CD20900A13564 /* ViewController.m */; };
+		5B9D71CE167CD4B400A13564 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9D71CD167CD4B400A13564 /* GLKit.framework */; };
 		5BC18ECF1640592100737A50 /* ARView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18EC61640592100737A50 /* ARView.m */; };
 		5BC18ED01640592100737A50 /* PlaceOfInterest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18EC81640592100737A50 /* PlaceOfInterest.m */; };
 		5BC18ED11640592100737A50 /* pARkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18ECA1640592100737A50 /* pARkViewController.m */; };
@@ -45,6 +47,9 @@
 		5B0D3C661638919A00E70D73 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5B0D3CA6163B081500E70D73 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5B8A374E1645952D00CEF093 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		5B9D71CA167CD20900A13564 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5B9D71CB167CD20900A13564 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5B9D71CD167CD4B400A13564 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		5BC18EC51640592100737A50 /* ARView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARView.h; sourceTree = "<group>"; };
 		5BC18EC61640592100737A50 /* ARView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARView.m; sourceTree = "<group>"; };
 		5BC18EC71640592100737A50 /* PlaceOfInterest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceOfInterest.h; sourceTree = "<group>"; };
@@ -68,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B9D71CE167CD4B400A13564 /* GLKit.framework in Frameworks */,
 				5BC18EDE164059F100737A50 /* CoreMotion.framework in Frameworks */,
 				5BC18EDC164059DE00737A50 /* AVFoundation.framework in Frameworks */,
 				5BC18EDA164059D900737A50 /* AssetsLibrary.framework in Frameworks */,
@@ -86,6 +92,7 @@
 		5B0D3C411638919A00E70D73 = {
 			isa = PBXGroup;
 			children = (
+				5B9D71CD167CD4B400A13564 /* GLKit.framework */,
 				5B0D3C561638919A00E70D73 /* masterAR */,
 				5B0D3C4F1638919A00E70D73 /* Frameworks */,
 				5B0D3C4D1638919A00E70D73 /* Products */,
@@ -119,6 +126,7 @@
 		5B0D3C561638919A00E70D73 /* masterAR */ = {
 			isa = PBXGroup;
 			children = (
+				5B9D71CF167CD76D00A13564 /* Overlay */,
 				5BC18EC51640592100737A50 /* ARView.h */,
 				5BC18EC61640592100737A50 /* ARView.m */,
 				5BC18EC71640592100737A50 /* PlaceOfInterest.h */,
@@ -148,6 +156,15 @@
 				5B0D3C661638919A00E70D73 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B9D71CF167CD76D00A13564 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				5B9D71CA167CD20900A13564 /* ViewController.h */,
+				5B9D71CB167CD20900A13564 /* ViewController.m */,
+			);
+			name = Overlay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +241,7 @@
 				5BC18ED01640592100737A50 /* PlaceOfInterest.m in Sources */,
 				5BC18ED11640592100737A50 /* pARkViewController.m in Sources */,
 				5BC18ED21640592100737A50 /* pARkAppDelegate.m in Sources */,
+				5B9D71CC167CD20900A13564 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
