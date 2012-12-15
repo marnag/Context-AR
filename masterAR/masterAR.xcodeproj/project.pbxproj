@@ -19,6 +19,8 @@
 		5B8A374F1645952D00CEF093 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8A374E1645952D00CEF093 /* MainStoryboard.storyboard */; };
 		5B9D71CC167CD20900A13564 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D71CB167CD20900A13564 /* ViewController.m */; };
 		5B9D71CE167CD4B400A13564 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9D71CD167CD4B400A13564 /* GLKit.framework */; };
+		5B9D71D1167CF28700A13564 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9D71D0167CF28700A13564 /* MapKit.framework */; };
+		5B9D71D5167CF39900A13564 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D71D4167CF39900A13564 /* MapViewController.m */; };
 		5BC18ECF1640592100737A50 /* ARView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18EC61640592100737A50 /* ARView.m */; };
 		5BC18ED01640592100737A50 /* PlaceOfInterest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18EC81640592100737A50 /* PlaceOfInterest.m */; };
 		5BC18ED11640592100737A50 /* pARkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18ECA1640592100737A50 /* pARkViewController.m */; };
@@ -50,6 +52,9 @@
 		5B9D71CA167CD20900A13564 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5B9D71CB167CD20900A13564 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5B9D71CD167CD4B400A13564 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		5B9D71D0167CF28700A13564 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5B9D71D3167CF39900A13564 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		5B9D71D4167CF39900A13564 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		5BC18EC51640592100737A50 /* ARView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARView.h; sourceTree = "<group>"; };
 		5BC18EC61640592100737A50 /* ARView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARView.m; sourceTree = "<group>"; };
 		5BC18EC71640592100737A50 /* PlaceOfInterest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceOfInterest.h; sourceTree = "<group>"; };
@@ -73,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B9D71D1167CF28700A13564 /* MapKit.framework in Frameworks */,
 				5B9D71CE167CD4B400A13564 /* GLKit.framework in Frameworks */,
 				5BC18EDE164059F100737A50 /* CoreMotion.framework in Frameworks */,
 				5BC18EDC164059DE00737A50 /* AVFoundation.framework in Frameworks */,
@@ -92,6 +98,7 @@
 		5B0D3C411638919A00E70D73 = {
 			isa = PBXGroup;
 			children = (
+				5B9D71D0167CF28700A13564 /* MapKit.framework */,
 				5B9D71CD167CD4B400A13564 /* GLKit.framework */,
 				5B0D3C561638919A00E70D73 /* masterAR */,
 				5B0D3C4F1638919A00E70D73 /* Frameworks */,
@@ -126,6 +133,7 @@
 		5B0D3C561638919A00E70D73 /* masterAR */ = {
 			isa = PBXGroup;
 			children = (
+				5B9D71D2167CF36A00A13564 /* Map */,
 				5B9D71CF167CD76D00A13564 /* Overlay */,
 				5BC18EC51640592100737A50 /* ARView.h */,
 				5BC18EC61640592100737A50 /* ARView.m */,
@@ -165,6 +173,15 @@
 				5B9D71CB167CD20900A13564 /* ViewController.m */,
 			);
 			name = Overlay;
+			sourceTree = "<group>";
+		};
+		5B9D71D2167CF36A00A13564 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				5B9D71D3167CF39900A13564 /* MapViewController.h */,
+				5B9D71D4167CF39900A13564 /* MapViewController.m */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +259,7 @@
 				5BC18ED11640592100737A50 /* pARkViewController.m in Sources */,
 				5BC18ED21640592100737A50 /* pARkAppDelegate.m in Sources */,
 				5B9D71CC167CD20900A13564 /* ViewController.m in Sources */,
+				5B9D71D5167CF39900A13564 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
