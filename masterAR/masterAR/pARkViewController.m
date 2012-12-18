@@ -67,6 +67,8 @@
 	ARView *arView = (ARView *)self.view;
 	
 	// Create array of hard-coded places-of-interest, in this case some famous parks
+
+    /*
     const char *poiNames[] = {"Central Park NY",
                               "Golden Gate Park SF",
                               "Balboa Park SD",
@@ -84,10 +86,26 @@
                                           {40.4152519, -3.6887466},
                                           {69.682687, 18.972089},
                                           {69.682132, 18.972722}};
-                                          
-    int numPois = sizeof(poiCoords) / sizeof(CLLocationCoordinate2D);	
-		
-	NSMutableArray *placesOfInterest = [NSMutableArray arrayWithCapacity:numPois];
+    */
+
+    const char *poiNames[] = {
+        "vegg1.png",
+        "vegg2.png",
+        "vegg3.png",
+        "vegg4.png"
+    };
+	
+    CLLocationCoordinate2D poiCoords[] = {
+        {51.5068670, -0.1708030},
+        {69.682132, 18.972722},
+        {45.5126399, -73.6802448},
+        {40.4152519, -3.6887466}};
+    
+    
+/*
+    int numPois = sizeof(poiCoords) / sizeof(CLLocationCoordinate2D);
+
+    NSMutableArray *placesOfInterest = [NSMutableArray arrayWithCapacity:numPois];
 	for (int i = 0; i < numPois; i++) {
 		UILabel *label = [[[UILabel alloc] init] autorelease];
 		label.adjustsFontSizeToFitWidth = NO;
@@ -96,14 +114,27 @@
 		label.center = CGPointMake(200.0f, 200.0f);
 		label.textAlignment = UITextAlignmentCenter;
 		label.textColor = [UIColor whiteColor];
-		label.text = [NSString stringWithCString:poiNames[i] encoding:NSASCIIStringEncoding];		
+		label.text = [NSString stringWithCString:poiNames[i] encoding:NSASCIIStringEncoding];
 		CGSize size = [label.text sizeWithFont:label.font];
 		label.bounds = CGRectMake(0.0f, 0.0f, size.width, size.height);
-				
+        
 		PlaceOfInterest *poi = [PlaceOfInterest placeOfInterestWithView:label at:[[[CLLocation alloc] initWithLatitude:poiCoords[i].latitude longitude:poiCoords[i].longitude] autorelease]];
+		[placesOfInterest insertObject:poi atIndex:i];
+	}
+	[arView setPlacesOfInterest:placesOfInterest];
+*/
+
+    int numPois = sizeof(poiCoords) / sizeof(CLLocationCoordinate2D);
+    
+	NSMutableArray *placesOfInterest = [NSMutableArray arrayWithCapacity:numPois];
+	for (int i = 0; i < numPois; i++) {
+        UIImageView *image = [[UIImageView alloc]initWithImage:[UIImage imageNamed:[NSString stringWithCString:poiNames[i] encoding:NSASCIIStringEncoding]]];
+        PlaceOfInterest *poi = [PlaceOfInterest placeOfInterestWithView:image at:[[[CLLocation alloc] initWithLatitude:poiCoords[i].latitude longitude:poiCoords[i].longitude] autorelease]];
 		[placesOfInterest insertObject:poi atIndex:i];
 	}	
 	[arView setPlacesOfInterest:placesOfInterest];	
+
+ 
 }
 
 - (void)viewDidUnload

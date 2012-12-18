@@ -132,18 +132,42 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Options" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dU-hb-XvX">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="v8u-ok-ugZ"/>
+                                    <constraint firstAttribute="width" constant="77" id="xkD-M9-Y0j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Grd-gS-I2a"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="AR overlay" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljy-5t-O1V">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Messaging mode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDU-zF-IfY">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agg-5E-JVe"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="7dU-hb-XvX" firstAttribute="top" secondItem="Xk6-zr-c6u" secondAttribute="top" constant="442" id="6BJ-Qy-tLX"/>
-                            <constraint firstItem="7dU-hb-XvX" firstAttribute="leading" secondItem="Xk6-zr-c6u" secondAttribute="leading" constant="351" id="sAY-Sl-qNE"/>
+                            <constraint firstItem="agg-5E-JVe" firstAttribute="leading" secondItem="Grd-gS-I2a" secondAttribute="leading" type="default" id="IDE-Ct-JxX"/>
+                            <constraint firstItem="7dU-hb-XvX" firstAttribute="leading" secondItem="Xk6-zr-c6u" secondAttribute="leading" constant="153" id="KSF-hB-KP5"/>
+                            <constraint firstItem="Grd-gS-I2a" firstAttribute="leading" secondItem="Xk6-zr-c6u" secondAttribute="leading" constant="238" id="KdK-pu-QMi"/>
+                            <constraint firstItem="Grd-gS-I2a" firstAttribute="top" secondItem="Xk6-zr-c6u" secondAttribute="top" constant="78" id="Q3H-mb-ZR2"/>
+                            <constraint firstItem="ljy-5t-O1V" firstAttribute="leading" secondItem="Xk6-zr-c6u" secondAttribute="leading" constant="67" id="QjA-EV-U8K"/>
+                            <constraint firstItem="7dU-hb-XvX" firstAttribute="top" secondItem="Xk6-zr-c6u" secondAttribute="top" constant="20" symbolic="YES" type="default" id="WOm-ia-f7J"/>
+                            <constraint firstItem="iDU-zF-IfY" firstAttribute="top" secondItem="Xk6-zr-c6u" secondAttribute="top" constant="139" id="ZCG-2j-g3H"/>
+                            <constraint firstItem="iDU-zF-IfY" firstAttribute="leading" secondItem="ljy-5t-O1V" secondAttribute="leading" type="default" id="n8d-jg-Gzf"/>
+                            <constraint firstItem="ljy-5t-O1V" firstAttribute="centerY" secondItem="Grd-gS-I2a" secondAttribute="centerY" type="default" id="qaF-Gn-p85"/>
+                            <constraint firstItem="agg-5E-JVe" firstAttribute="top" secondItem="iDU-zF-IfY" secondAttribute="top" type="default" id="wlo-VB-IbV"/>
                         </constraints>
                     </view>
-                    <value key="contentSizeForViewInPopover" type="size" width="768" height="500"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="400" height="500"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOP-sh-Mrj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

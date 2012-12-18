@@ -21,6 +21,10 @@
 		5B9D71CE167CD4B400A13564 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9D71CD167CD4B400A13564 /* GLKit.framework */; };
 		5B9D71D1167CF28700A13564 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9D71D0167CF28700A13564 /* MapKit.framework */; };
 		5B9D71D5167CF39900A13564 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D71D4167CF39900A13564 /* MapViewController.m */; };
+		5B9D71DA167FF8A300A13564 /* vegg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D71D6167FF8A200A13564 /* vegg1.png */; };
+		5B9D71DB167FF8A300A13564 /* vegg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D71D7167FF8A200A13564 /* vegg2.png */; };
+		5B9D71DC167FF8A300A13564 /* vegg3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D71D8167FF8A300A13564 /* vegg3.png */; };
+		5B9D71DD167FF8A300A13564 /* vegg4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D71D9167FF8A300A13564 /* vegg4.png */; };
 		5BC18ECF1640592100737A50 /* ARView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18EC61640592100737A50 /* ARView.m */; };
 		5BC18ED01640592100737A50 /* PlaceOfInterest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18EC81640592100737A50 /* PlaceOfInterest.m */; };
 		5BC18ED11640592100737A50 /* pARkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18ECA1640592100737A50 /* pARkViewController.m */; };
@@ -55,6 +59,10 @@
 		5B9D71D0167CF28700A13564 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5B9D71D3167CF39900A13564 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		5B9D71D4167CF39900A13564 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		5B9D71D6167FF8A200A13564 /* vegg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vegg1.png; sourceTree = "<group>"; };
+		5B9D71D7167FF8A200A13564 /* vegg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vegg2.png; sourceTree = "<group>"; };
+		5B9D71D8167FF8A300A13564 /* vegg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vegg3.png; sourceTree = "<group>"; };
+		5B9D71D9167FF8A300A13564 /* vegg4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vegg4.png; sourceTree = "<group>"; };
 		5BC18EC51640592100737A50 /* ARView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARView.h; sourceTree = "<group>"; };
 		5BC18EC61640592100737A50 /* ARView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARView.m; sourceTree = "<group>"; };
 		5BC18EC71640592100737A50 /* PlaceOfInterest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceOfInterest.h; sourceTree = "<group>"; };
@@ -98,8 +106,6 @@
 		5B0D3C411638919A00E70D73 = {
 			isa = PBXGroup;
 			children = (
-				5B9D71D0167CF28700A13564 /* MapKit.framework */,
-				5B9D71CD167CD4B400A13564 /* GLKit.framework */,
 				5B0D3C561638919A00E70D73 /* masterAR */,
 				5B0D3C4F1638919A00E70D73 /* Frameworks */,
 				5B0D3C4D1638919A00E70D73 /* Products */,
@@ -117,6 +123,8 @@
 		5B0D3C4F1638919A00E70D73 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5B9D71D0167CF28700A13564 /* MapKit.framework */,
+				5B9D71CD167CD4B400A13564 /* GLKit.framework */,
 				5BC18EDD164059F100737A50 /* CoreMotion.framework */,
 				5BC18EDB164059DE00737A50 /* AVFoundation.framework */,
 				5BC18ED9164059D900737A50 /* AssetsLibrary.framework */,
@@ -147,6 +155,7 @@
 				5BC18ECE1640592100737A50 /* pARkViewController_iPad.xib */,
 				5B0D3C571638919A00E70D73 /* Supporting Files */,
 				5B8A374E1645952D00CEF093 /* MainStoryboard.storyboard */,
+				5B9D71DE167FF8AB00A13564 /* Resources */,
 			);
 			path = masterAR;
 			sourceTree = "<group>";
@@ -182,6 +191,17 @@
 				5B9D71D4167CF39900A13564 /* MapViewController.m */,
 			);
 			name = Map;
+			sourceTree = "<group>";
+		};
+		5B9D71DE167FF8AB00A13564 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5B9D71D6167FF8A200A13564 /* vegg1.png */,
+				5B9D71D7167FF8A200A13564 /* vegg2.png */,
+				5B9D71D8167FF8A300A13564 /* vegg3.png */,
+				5B9D71D9167FF8A300A13564 /* vegg4.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +263,10 @@
 				5BC18ED41640592100737A50 /* pARkViewController_iPad.xib in Resources */,
 				5BC18EEC1645449D00737A50 /* Icon-72.png in Resources */,
 				5B8A374F1645952D00CEF093 /* MainStoryboard.storyboard in Resources */,
+				5B9D71DA167FF8A300A13564 /* vegg1.png in Resources */,
+				5B9D71DB167FF8A300A13564 /* vegg2.png in Resources */,
+				5B9D71DC167FF8A300A13564 /* vegg3.png in Resources */,
+				5B9D71DD167FF8A300A13564 /* vegg4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
