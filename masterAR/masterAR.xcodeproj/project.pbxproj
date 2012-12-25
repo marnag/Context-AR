@@ -356,7 +356,7 @@
 		5B0D3C861638919A00E70D73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "masterAR/masterAR-Prefix.pch";
 				INFOPLIST_FILE = "masterAR/masterAR-Info.plist";
@@ -369,7 +369,7 @@
 		5B0D3C871638919A00E70D73 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "masterAR/masterAR-Prefix.pch";
 				INFOPLIST_FILE = "masterAR/masterAR-Info.plist";

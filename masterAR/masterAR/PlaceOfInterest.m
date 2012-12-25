@@ -62,16 +62,10 @@
     return self;
 }
 
-- (void)dealloc
-{
-	[view release];
-	[location release];
-	[super dealloc];
-}
 
 + (PlaceOfInterest *)placeOfInterestWithView:(UIView *)view at:(CLLocation *)location
 {
-	PlaceOfInterest *poi = [[[PlaceOfInterest alloc] init] autorelease];
+	PlaceOfInterest *poi = [[PlaceOfInterest alloc] init];
 	poi.view = view;
 	poi.location = location;
 	return poi;

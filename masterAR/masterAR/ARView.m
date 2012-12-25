@@ -130,14 +130,10 @@ void ecefToEnu(double lat, double lon, double x, double y, double z, double xr, 
 - (void)dealloc
 {
 	[self stop];
-	[placesOfInterest release];
-	[location release];
 	[captureView removeFromSuperview];
-	[captureView release];
 	if (placesOfInterestCoordinates != NULL) {
 		free(placesOfInterestCoordinates);
 	}
-	[super dealloc];
 }
 
 - (void)start
@@ -161,9 +157,8 @@ void ecefToEnu(double lat, double lon, double x, double y, double z, double xr, 
 	for (PlaceOfInterest *poi in [placesOfInterest objectEnumerator]) {
 		[poi.view removeFromSuperview];
 	}	
-	[placesOfInterest release];
 	
-	placesOfInterest = [pois retain];	
+	placesOfInterest = pois;	
 	if (location != nil) {
 		[self updatePlacesOfInterestCoordinates];
 	}
@@ -193,7 +188,7 @@ void ecefToEnu(double lat, double lon, double x, double y, double z, double xr, 
 	}
 	
 	captureSession = [[AVCaptureSession alloc] init];
-	AVCaptureDeviceInput *newVideoInput = [[[AVCaptureDeviceInput alloc] initWithDevice:camera error:nil] autorelease];
+	AVCaptureDeviceInput *newVideoInput = [[AVCaptureDeviceInput alloc] initWithDevice:camera error:nil];
 	[captureSession addInput:newVideoInput];
 	
 	captureLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:captureSession];
@@ -212,15 +207,12 @@ void ecefToEnu(double lat, double lon, double x, double y, double z, double xr, 
 {	
 	[captureSession stopRunning];
 	[captureLayer removeFromSuperlayer];
-	[captureSession release];
-	[captureLayer release];
 	captureSession = nil;
 	captureLayer = nil;
 }
 
 - (void)startLocation
 {
-	[locationManager release];
 	locationManager = [[CLLocationManager alloc] init];
 	locationManager.delegate = self;
 	locationManager.distanceFilter = 100.0;
@@ -230,7 +222,6 @@ void ecefToEnu(double lat, double lon, double x, double y, double z, double xr, 
 - (void)stopLocation
 {
 	[locationManager stopUpdatingLocation];
-	[locationManager release];
 	locationManager = nil;
 }
 
@@ -251,13 +242,12 @@ void ecefToEnu(double lat, double lon, double x, double y, double z, double xr, 
 - (void)stopDeviceMotion
 {
 	[motionManager stopDeviceMotionUpdates];
-	[motionManager release];
 	motionManager = nil;
 }
 
 - (void)startDisplayLink
 {
-	displayLink = [[CADisplayLink displayLinkWithTarget:self selector:@selector(onDisplayLink:)] retain];
+	displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(onDisplayLink:)];
 	[displayLink setFrameInterval:1];
 	[displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
 }
@@ -265,7 +255,6 @@ void ecefToEnu(double lat, double lon, double x, double y, double z, double xr, 
 - (void)stopDisplayLink
 {
 	[displayLink invalidate];
-	[displayLink release];
 	displayLink = nil;		
 }
 
@@ -370,8 +359,7 @@ void ecefToEnu(double lat, double lon, double x, double y, double z, double xr, 
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 {
-	[location release];
-	location = [newLocation retain];
+	location = newLocation;
 	if (placesOfInterest != nil) {
 		[self updatePlacesOfInterestCoordinates];
 	}	

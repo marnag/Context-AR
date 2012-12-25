@@ -10,6 +10,6 @@
 #import <MapKit/MapKit.h>
 
 @interface MapViewController : UIViewController
-@property (assign, nonatomic) IBOutlet MKMapView *myMKMapView;
+@property (weak, nonatomic) IBOutlet MKMapView *myMKMapView;
 
 @end

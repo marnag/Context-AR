@@ -51,8 +51,8 @@
 
 @interface PlaceOfInterest : NSObject
 
-@property (nonatomic, retain) UIView *view;
-@property (nonatomic, retain) CLLocation *location;
+@property (nonatomic, strong) UIView *view;
+@property (nonatomic, strong) CLLocation *location;
 
 + (PlaceOfInterest *)placeOfInterestWithView:(UIView *)view at:(CLLocation *)location;
 

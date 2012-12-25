@@ -129,7 +129,7 @@
 	NSMutableArray *placesOfInterest = [NSMutableArray arrayWithCapacity:numPois];
 	for (int i = 0; i < numPois; i++) {
         UIImageView *image = [[UIImageView alloc]initWithImage:[UIImage imageNamed:[NSString stringWithCString:poiNames[i] encoding:NSASCIIStringEncoding]]];
-        PlaceOfInterest *poi = [PlaceOfInterest placeOfInterestWithView:image at:[[[CLLocation alloc] initWithLatitude:poiCoords[i].latitude longitude:poiCoords[i].longitude] autorelease]];
+        PlaceOfInterest *poi = [PlaceOfInterest placeOfInterestWithView:image at:[[CLLocation alloc] initWithLatitude:poiCoords[i].latitude longitude:poiCoords[i].longitude]];
 		[placesOfInterest insertObject:poi atIndex:i];
 	}	
 	[arView setPlacesOfInterest:placesOfInterest];	
