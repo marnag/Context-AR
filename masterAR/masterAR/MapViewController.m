@@ -43,9 +43,9 @@
 - (void)viewWillAppear:(BOOL)animated {
 
     CLLocationCoordinate2D zoomLocation;
-    zoomLocation.latitude = 59.888045;
-    zoomLocation.longitude = 10.517166;
-
+    zoomLocation.latitude = 69.653653;
+    zoomLocation.longitude = 18.959366;
+    
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.5*METERS_PER_MILE, 0.5*METERS_PER_MILE);
     
     [myMKMapView setRegion:viewRegion animated:YES];
