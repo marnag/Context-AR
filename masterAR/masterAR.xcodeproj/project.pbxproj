@@ -25,6 +25,7 @@
 		5B9D71DB167FF8A300A13564 /* vegg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D71D7167FF8A200A13564 /* vegg2.png */; };
 		5B9D71DC167FF8A300A13564 /* vegg3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D71D8167FF8A300A13564 /* vegg3.png */; };
 		5B9D71DD167FF8A300A13564 /* vegg4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D71D9167FF8A300A13564 /* vegg4.png */; };
+		5B9D71E6169E162200A13564 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D71E5169E162200A13564 /* WebViewController.m */; };
 		5BC18ECF1640592100737A50 /* ARView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18EC61640592100737A50 /* ARView.m */; };
 		5BC18ED01640592100737A50 /* PlaceOfInterest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18EC81640592100737A50 /* PlaceOfInterest.m */; };
 		5BC18ED11640592100737A50 /* pARkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18ECA1640592100737A50 /* pARkViewController.m */; };
@@ -63,6 +64,8 @@
 		5B9D71D7167FF8A200A13564 /* vegg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vegg2.png; sourceTree = "<group>"; };
 		5B9D71D8167FF8A300A13564 /* vegg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vegg3.png; sourceTree = "<group>"; };
 		5B9D71D9167FF8A300A13564 /* vegg4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vegg4.png; sourceTree = "<group>"; };
+		5B9D71E4169E162200A13564 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		5B9D71E5169E162200A13564 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		5BC18EC51640592100737A50 /* ARView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARView.h; sourceTree = "<group>"; };
 		5BC18EC61640592100737A50 /* ARView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARView.m; sourceTree = "<group>"; };
 		5BC18EC71640592100737A50 /* PlaceOfInterest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceOfInterest.h; sourceTree = "<group>"; };
@@ -141,6 +144,7 @@
 		5B0D3C561638919A00E70D73 /* masterAR */ = {
 			isa = PBXGroup;
 			children = (
+				5B9D71E3169E15DB00A13564 /* Web */,
 				5B9D71D2167CF36A00A13564 /* Map */,
 				5B9D71CF167CD76D00A13564 /* Overlay */,
 				5BC18EC51640592100737A50 /* ARView.h */,
@@ -202,6 +206,15 @@
 				5B9D71D9167FF8A300A13564 /* vegg4.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		5B9D71E3169E15DB00A13564 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				5B9D71E4169E162200A13564 /* WebViewController.h */,
+				5B9D71E5169E162200A13564 /* WebViewController.m */,
+			);
+			name = Web;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +297,7 @@
 				5BC18ED21640592100737A50 /* pARkAppDelegate.m in Sources */,
 				5B9D71CC167CD20900A13564 /* ViewController.m in Sources */,
 				5B9D71D5167CF39900A13564 /* MapViewController.m in Sources */,
+				5B9D71E6169E162200A13564 /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
