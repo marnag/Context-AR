@@ -53,6 +53,15 @@
 
 @implementation pARkViewController
 
+char *poiNames[] = {
+    "vegg1.png",
+    "vegg2.png",
+    "vegg3.png",
+    "vegg4.png"
+};
+
+int teller = 0;
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -87,21 +96,7 @@
                                           {69.682687, 18.972089},
                                           {69.682132, 18.972722}};
     */
-
-    const char *poiNames[] = {
-        "vegg1.png",
-        "vegg2.png",
-        "vegg3.png",
-        "vegg4.png"
-    };
 	
-    CLLocationCoordinate2D poiCoords[] = {
-        {69.653856, 18.959567},
-        {69.653781, 18.958633},
-        {69.653515, 18.959146},
-        {69.653588, 18.959945}};
-    
-    
 /*
     int numPois = sizeof(poiCoords) / sizeof(CLLocationCoordinate2D);
 
@@ -123,7 +118,13 @@
 	}
 	[arView setPlacesOfInterest:placesOfInterest];
 */
-
+/*
+    CLLocationCoordinate2D poiCoords[] = {
+        {69.653856, 18.959567},
+        {69.653781, 18.958633},
+        {69.653515, 18.959146},
+        {69.653588, 18.959945}};
+    
     int numPois = sizeof(poiCoords) / sizeof(CLLocationCoordinate2D);
     
 	NSMutableArray *placesOfInterest = [NSMutableArray arrayWithCapacity:numPois];
@@ -131,10 +132,69 @@
         UIImageView *image = [[UIImageView alloc]initWithImage:[UIImage imageNamed:[NSString stringWithCString:poiNames[i] encoding:NSASCIIStringEncoding]]];
         PlaceOfInterest *poi = [PlaceOfInterest placeOfInterestWithView:image at:[[CLLocation alloc] initWithLatitude:poiCoords[i].latitude longitude:poiCoords[i].longitude]];
 		[placesOfInterest insertObject:poi atIndex:i];
-	}	
+	}
+ 
+ */
+ 
+    NSMutableArray *placesOfInterest = [self setPOI];
+    
 	[arView setPlacesOfInterest:placesOfInterest];	
 
- 
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshView:) name:@"refreshView" object:nil];
+     NSLog(@"Sett ARview");
+    
+}
+
+- (NSMutableArray *)setPOI
+{
+    
+    CLLocationCoordinate2D poiCoords[] = {
+        {69.653856, 18.959567},
+        {69.653781, 18.958633},
+        {69.653515, 18.959146},
+        {69.653588, 18.959945}};
+
+    int numPois = sizeof(poiCoords) / sizeof(CLLocationCoordinate2D);
+    
+    NSMutableArray *placesOfInterest = [NSMutableArray arrayWithCapacity:numPois];
+	for (int i = 0; i < numPois; i++) {
+        UIImageView *image = [[UIImageView alloc]initWithImage:[UIImage imageNamed:[NSString stringWithCString:poiNames[i] encoding:NSASCIIStringEncoding]]];
+        PlaceOfInterest *poi = [PlaceOfInterest placeOfInterestWithView:image at:[[CLLocation alloc] initWithLatitude:poiCoords[i].latitude longitude:poiCoords[i].longitude]];
+		[placesOfInterest insertObject:poi atIndex:i];
+	}
+
+    return placesOfInterest;
+    
+}
+
+- (void)refreshView:(NSNotification *) notification{
+    
+    NSLog(@"Test trykk i parkviewcontroller");
+
+    if(teller==0){
+        poiNames[0] = "vegg5.png";
+        poiNames[1] = "vegg5.png";
+        poiNames[2] = "vegg5.png";
+        poiNames[3] = "vegg5.png";
+    }
+    if(teller==1){
+        poiNames[0] = "vegg6.png";
+        poiNames[1] = "vegg6.png";
+        poiNames[2] = "vegg6.png";
+        poiNames[3] = "vegg6.png";
+    }
+    if(teller==2){
+        poiNames[0] = "vegg7.png";
+        poiNames[1] = "vegg7.png";
+        poiNames[2] = "vegg7.png";
+        poiNames[3] = "vegg7.png";
+    }
+
+    teller++;
+    
+    [self viewDidDisappear:YES];
+    [self viewWillAppear:YES];
+
 }
 
 - (void)viewDidUnload
@@ -148,7 +208,11 @@
 {
 	[super viewWillAppear:animated];
 	ARView *arView = (ARView *)self.view;
-	[arView start];
+
+    NSMutableArray *placesOfInterest = [self setPOI];
+	[arView setPlacesOfInterest:placesOfInterest];
+	
+    [arView start];
 }
 
 - (void)viewDidAppear:(BOOL)animated

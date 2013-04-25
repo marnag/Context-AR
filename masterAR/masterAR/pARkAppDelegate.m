@@ -62,11 +62,22 @@
 //    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
 //    _viewController = [sb instantiateViewControllerWithIdentifier:@"pARkViewController"];
     UIStoryboard* sb = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-    _viewController = [sb instantiateViewControllerWithIdentifier:@"FirstSB"];
+    _viewController = [sb instantiateViewControllerWithIdentifier:@"Login"];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+
+//    UIImage* tabBarBackground = [UIImage imageNamed:@"tabbar_wood2.png"];
+//    [[UITabBar appearance] setBackgroundImage:tabBarBackground];
+//    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar_selected_wood2.png"]];
+//    [[UITabBar appearance] setSelectedImageTintColor:[UIColor redColor]];
+
+//    UIImage* tabBarBackground2 = [UIImage imageNamed:@"tabbar_wood2.png"];
+//    [[UIToolbar appearance] setBackgroundImage:tabBarBackground2];
+    
     return YES;
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

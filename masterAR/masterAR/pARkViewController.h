@@ -48,7 +48,11 @@
 #import <UIKit/UIKit.h>
 
 
-@interface pARkViewController : UIViewController {	
+@interface pARkViewController : UIViewController
+{
+    
 }
+
+- (void)refreshView:(NSNotification *) notification;
 
 @end
