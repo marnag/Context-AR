@@ -48,6 +48,7 @@
 #import "pARkViewController.h"
 #import "PlaceOfInterest.h"
 #import "ARView.h"
+#import "FilterViewController.h"
 
 #import <CoreLocation/CoreLocation.h>
 
@@ -60,7 +61,11 @@ char *poiNames[] = {
     "vegg4.png"
 };
 
-int teller = 0;
+CLLocationCoordinate2D poiCoords[] = {
+    {69.653856, 18.959567},
+    {69.653781, 18.958633},
+    {69.653515, 18.959146},
+    {69.653588, 18.959945}};
 
 - (void)didReceiveMemoryWarning
 {
@@ -139,7 +144,7 @@ int teller = 0;
     NSMutableArray *placesOfInterest = [self setPOI];
     
 	[arView setPlacesOfInterest:placesOfInterest];	
-
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshView:) name:@"refreshView" object:nil];
      NSLog(@"Sett ARview");
     
@@ -147,12 +152,6 @@ int teller = 0;
 
 - (NSMutableArray *)setPOI
 {
-    
-    CLLocationCoordinate2D poiCoords[] = {
-        {69.653856, 18.959567},
-        {69.653781, 18.958633},
-        {69.653515, 18.959146},
-        {69.653588, 18.959945}};
 
     int numPois = sizeof(poiCoords) / sizeof(CLLocationCoordinate2D);
     
@@ -168,29 +167,20 @@ int teller = 0;
 }
 
 - (void)refreshView:(NSNotification *) notification{
+
+    vizData = [[VisualizationData alloc] init];
     
-    NSLog(@"Test trykk i parkviewcontroller");
+    FilterViewController *mpObject = (FilterViewController *) [notification object];
+    
+    NSString *chosenViz = [NSString stringWithFormat:@"%d", mpObject.currentItem];
+    
+    NSLog(chosenViz);
 
-    if(teller==0){
-        poiNames[0] = "vegg5.png";
-        poiNames[1] = "vegg5.png";
-        poiNames[2] = "vegg5.png";
-        poiNames[3] = "vegg5.png";
-    }
-    if(teller==1){
-        poiNames[0] = "vegg6.png";
-        poiNames[1] = "vegg6.png";
-        poiNames[2] = "vegg6.png";
-        poiNames[3] = "vegg6.png";
-    }
-    if(teller==2){
-        poiNames[0] = "vegg7.png";
-        poiNames[1] = "vegg7.png";
-        poiNames[2] = "vegg7.png";
-        poiNames[3] = "vegg7.png";
-    }
-
-    teller++;
+    
+    poiNames[0] = "vegg5.png";
+    poiNames[1] = "vegg5.png";
+    poiNames[2] = "vegg5.png";
+    poiNames[3] = "vegg5.png";
     
     [self viewDidDisappear:YES];
     [self viewWillAppear:YES];

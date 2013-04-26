@@ -17,6 +17,8 @@
     NSArray *tableData;
 }
 
+@synthesize currentItem;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -53,13 +55,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    filterName = @"vegg5.png";
+
+    currentItem = indexPath.row;
     
-    NSLog(filterName);
-    //NSLog(@"something happened");
-
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"refreshView" object:nil];
-
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"refreshView" object:self];
+    
 }
 
 - (void)didReceiveMemoryWarning

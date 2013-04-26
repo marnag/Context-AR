@@ -26,6 +26,7 @@
 		5B900CDB1729408900BCA59B /* vegg5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B900CDA1729408900BCA59B /* vegg5.png */; };
 		5B900CDE1729CFA200BCA59B /* vegg6.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B900CDC1729CFA200BCA59B /* vegg6.png */; };
 		5B900CDF1729CFA200BCA59B /* vegg7.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B900CDD1729CFA200BCA59B /* vegg7.png */; };
+		5B900CE31729E1B800BCA59B /* VisualizationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B900CE21729E1B800BCA59B /* VisualizationData.m */; };
 		5B9D71CC167CD20900A13564 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D71CB167CD20900A13564 /* ViewController.m */; };
 		5B9D71CE167CD4B400A13564 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9D71CD167CD4B400A13564 /* GLKit.framework */; };
 		5B9D71D1167CF28700A13564 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9D71D0167CF28700A13564 /* MapKit.framework */; };
@@ -73,6 +74,8 @@
 		5B900CDA1729408900BCA59B /* vegg5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vegg5.png; sourceTree = "<group>"; };
 		5B900CDC1729CFA200BCA59B /* vegg6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vegg6.png; sourceTree = "<group>"; };
 		5B900CDD1729CFA200BCA59B /* vegg7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vegg7.png; sourceTree = "<group>"; };
+		5B900CE11729E1B800BCA59B /* VisualizationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualizationData.h; sourceTree = "<group>"; };
+		5B900CE21729E1B800BCA59B /* VisualizationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualizationData.m; sourceTree = "<group>"; };
 		5B9D71CA167CD20900A13564 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5B9D71CB167CD20900A13564 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5B9D71CD167CD4B400A13564 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
@@ -163,6 +166,7 @@
 		5B0D3C561638919A00E70D73 /* masterAR */ = {
 			isa = PBXGroup;
 			children = (
+				5B900CE01729E18100BCA59B /* VisualizationData */,
 				5B900C75172920F000BCA59B /* Filter */,
 				5B9D71E3169E15DB00A13564 /* Web */,
 				5B9D71D2167CF36A00A13564 /* Map */,
@@ -211,6 +215,15 @@
 				5B900C73172920E900BCA59B /* FilterViewController.m */,
 			);
 			name = Filter;
+			sourceTree = "<group>";
+		};
+		5B900CE01729E18100BCA59B /* VisualizationData */ = {
+			isa = PBXGroup;
+			children = (
+				5B900CE11729E1B800BCA59B /* VisualizationData.h */,
+				5B900CE21729E1B800BCA59B /* VisualizationData.m */,
+			);
+			name = VisualizationData;
 			sourceTree = "<group>";
 		};
 		5B9D71CF167CD76D00A13564 /* Overlay */ = {
@@ -344,6 +357,7 @@
 				5B9D71D5167CF39900A13564 /* MapViewController.m in Sources */,
 				5B9D71E6169E162200A13564 /* WebViewController.m in Sources */,
 				5B900C74172920E900BCA59B /* FilterViewController.m in Sources */,
+				5B900CE31729E1B800BCA59B /* VisualizationData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

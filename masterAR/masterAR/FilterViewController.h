@@ -10,10 +10,10 @@
 
 @interface FilterViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
-
     __weak NSString *filterName;
-    
     __weak IBOutlet UITableView *TableTest;
 }
+
+@property int *currentItem;
 
 @end

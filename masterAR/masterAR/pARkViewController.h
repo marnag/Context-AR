@@ -46,10 +46,12 @@
  */
 
 #import <UIKit/UIKit.h>
-
+#import "VisualizationData.h"
 
 @interface pARkViewController : UIViewController
 {
+    
+    VisualizationData * vizData;
     
 }
 
