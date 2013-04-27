@@ -7,8 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PlaceOfInterest.h"
 
-@interface VisualizationData : NSObject
+@interface VisualizationData : NSObject{
+
+    CLLocationCoordinate2D poiCoords0[4];
+
+}
 
 @property (nonatomic, strong) NSArray *placesOfInterest;
 

@@ -55,10 +55,10 @@
 @implementation pARkViewController
 
 char *poiNames[] = {
-    "vegg1.png",
-    "vegg2.png",
-    "vegg3.png",
-    "vegg4.png"
+    "viz1.png",
+    "viz2.png",
+    "viz3.png",
+    "viz4.png"
 };
 
 CLLocationCoordinate2D poiCoords[] = {
@@ -81,65 +81,6 @@ CLLocationCoordinate2D poiCoords[] = {
 	ARView *arView = (ARView *)self.view;
 	
 	// Create array of hard-coded places-of-interest, in this case some famous parks
-
-    /*
-    const char *poiNames[] = {"Central Park NY",
-                              "Golden Gate Park SF",
-                              "Balboa Park SD",
-                              "Hyde Park UK",
-                              "Mont Royal QC",
-                              "Retiro Park ES",
-                              "Vest for BFE",
-                              "Sør for BFE"};
-	
-    CLLocationCoordinate2D poiCoords[] = {{40.7711329, -73.9741874},
-                                          {37.7690400, -122.4835193},
-                                          {32.7343822, -117.1441227},
-                                          {51.5068670, -0.1708030},
-                                          {45.5126399, -73.6802448},
-                                          {40.4152519, -3.6887466},
-                                          {69.682687, 18.972089},
-                                          {69.682132, 18.972722}};
-    */
-	
-/*
-    int numPois = sizeof(poiCoords) / sizeof(CLLocationCoordinate2D);
-
-    NSMutableArray *placesOfInterest = [NSMutableArray arrayWithCapacity:numPois];
-	for (int i = 0; i < numPois; i++) {
-		UILabel *label = [[[UILabel alloc] init] autorelease];
-		label.adjustsFontSizeToFitWidth = NO;
-		label.opaque = NO;
-		label.backgroundColor = [UIColor colorWithRed:0.1f green:0.1f blue:0.1f alpha:0.5f];
-		label.center = CGPointMake(200.0f, 200.0f);
-		label.textAlignment = UITextAlignmentCenter;
-		label.textColor = [UIColor whiteColor];
-		label.text = [NSString stringWithCString:poiNames[i] encoding:NSASCIIStringEncoding];
-		CGSize size = [label.text sizeWithFont:label.font];
-		label.bounds = CGRectMake(0.0f, 0.0f, size.width, size.height);
-        
-		PlaceOfInterest *poi = [PlaceOfInterest placeOfInterestWithView:label at:[[[CLLocation alloc] initWithLatitude:poiCoords[i].latitude longitude:poiCoords[i].longitude] autorelease]];
-		[placesOfInterest insertObject:poi atIndex:i];
-	}
-	[arView setPlacesOfInterest:placesOfInterest];
-*/
-/*
-    CLLocationCoordinate2D poiCoords[] = {
-        {69.653856, 18.959567},
-        {69.653781, 18.958633},
-        {69.653515, 18.959146},
-        {69.653588, 18.959945}};
-    
-    int numPois = sizeof(poiCoords) / sizeof(CLLocationCoordinate2D);
-    
-	NSMutableArray *placesOfInterest = [NSMutableArray arrayWithCapacity:numPois];
-	for (int i = 0; i < numPois; i++) {
-        UIImageView *image = [[UIImageView alloc]initWithImage:[UIImage imageNamed:[NSString stringWithCString:poiNames[i] encoding:NSASCIIStringEncoding]]];
-        PlaceOfInterest *poi = [PlaceOfInterest placeOfInterestWithView:image at:[[CLLocation alloc] initWithLatitude:poiCoords[i].latitude longitude:poiCoords[i].longitude]];
-		[placesOfInterest insertObject:poi atIndex:i];
-	}
- 
- */
  
     NSMutableArray *placesOfInterest = [self setPOI];
     
@@ -166,21 +107,24 @@ CLLocationCoordinate2D poiCoords[] = {
     
 }
 
+- (char)convertVizData:(int *) chosenViz{
+
+    return nil;
+}
+
 - (void)refreshView:(NSNotification *) notification{
 
     vizData = [[VisualizationData alloc] init];
     
     FilterViewController *mpObject = (FilterViewController *) [notification object];
+    int current = mpObject.currentItem;
+    NSString *chosenViz = [NSString stringWithFormat:@"%d", current];
+    char *vizFileChar = [[NSString stringWithFormat:@"%@%@%@", @"viz", chosenViz, @".png"] UTF8String];
     
-    NSString *chosenViz = [NSString stringWithFormat:@"%d", mpObject.currentItem];
-    
-    NSLog(chosenViz);
-
-    
-    poiNames[0] = "vegg5.png";
-    poiNames[1] = "vegg5.png";
-    poiNames[2] = "vegg5.png";
-    poiNames[3] = "vegg5.png";
+    poiNames[0] = vizFileChar;
+    poiNames[1] = vizFileChar;
+    poiNames[2] = vizFileChar;
+    poiNames[3] = vizFileChar;    
     
     [self viewDidDisappear:YES];
     [self viewWillAppear:YES];

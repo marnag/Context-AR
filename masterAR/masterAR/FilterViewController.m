@@ -30,8 +30,11 @@
                  @"Electrical tables",
                  @"Ventilation pipes",
                  @"Ventilation valves",
+                 @"Ventilation aggregate",
                  @"Water pipes",
                  @"Water valves",
+                 @"Doors",
+                 @"NONE",
                  nil];
 }
 
