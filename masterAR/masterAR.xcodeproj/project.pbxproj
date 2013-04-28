@@ -41,6 +41,10 @@
 		5B9D71E6169E162200A13564 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D71E5169E162200A13564 /* WebViewController.m */; };
 		5BB0552B172C106F00FADB99 /* viz10.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0552A172C106F00FADB99 /* viz10.png */; };
 		5BB05532172C153200FADB99 /* BIMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB05531172C153200FADB99 /* BIMViewController.m */; };
+		5BB05538172C757400FADB99 /* MapData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB05537172C757400FADB99 /* MapData.m */; };
+		5BB0553B172C833500FADB99 /* MapOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0553A172C833500FADB99 /* MapOverlay.m */; };
+		5BB0553E172C88CA00FADB99 /* MapOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0553D172C88CA00FADB99 /* MapOverlayView.m */; };
+		5BB05540172C8D3D00FADB99 /* overlay_park.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0553F172C8D3D00FADB99 /* overlay_park.png */; };
 		5BC18ECF1640592100737A50 /* ARView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18EC61640592100737A50 /* ARView.m */; };
 		5BC18ED01640592100737A50 /* PlaceOfInterest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18EC81640592100737A50 /* PlaceOfInterest.m */; };
 		5BC18ED11640592100737A50 /* pARkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18ECA1640592100737A50 /* pARkViewController.m */; };
@@ -53,6 +57,9 @@
 		5BC18EDC164059DE00737A50 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC18EDB164059DE00737A50 /* AVFoundation.framework */; };
 		5BC18EDE164059F100737A50 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC18EDD164059F100737A50 /* CoreMotion.framework */; };
 		5BC18EEC1645449D00737A50 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BC18EEB1645449D00737A50 /* Icon-72.png */; };
+		5BDA7325172CA54900EE2FA1 /* overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BDA7324172CA54900EE2FA1 /* overlay.png */; };
+		5BDA7327172CA62500EE2FA1 /* overlay2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BDA7326172CA62500EE2FA1 /* overlay2.png */; };
+		5BDA732C172D339C00EE2FA1 /* LocationRetrieval.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA732B172D339C00EE2FA1 /* LocationRetrieval.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +106,13 @@
 		5BB0552A172C106F00FADB99 /* viz10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viz10.png; sourceTree = "<group>"; };
 		5BB05530172C153200FADB99 /* BIMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIMViewController.h; sourceTree = "<group>"; };
 		5BB05531172C153200FADB99 /* BIMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIMViewController.m; sourceTree = "<group>"; };
+		5BB05536172C757400FADB99 /* MapData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapData.h; sourceTree = "<group>"; };
+		5BB05537172C757400FADB99 /* MapData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapData.m; sourceTree = "<group>"; };
+		5BB05539172C833500FADB99 /* MapOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapOverlay.h; sourceTree = "<group>"; };
+		5BB0553A172C833500FADB99 /* MapOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapOverlay.m; sourceTree = "<group>"; };
+		5BB0553C172C88C900FADB99 /* MapOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapOverlayView.h; sourceTree = "<group>"; };
+		5BB0553D172C88CA00FADB99 /* MapOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapOverlayView.m; sourceTree = "<group>"; };
+		5BB0553F172C8D3D00FADB99 /* overlay_park.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay_park.png; sourceTree = "<group>"; };
 		5BC18EC51640592100737A50 /* ARView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARView.h; sourceTree = "<group>"; };
 		5BC18EC61640592100737A50 /* ARView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARView.m; sourceTree = "<group>"; };
 		5BC18EC71640592100737A50 /* PlaceOfInterest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceOfInterest.h; sourceTree = "<group>"; };
@@ -115,6 +129,10 @@
 		5BC18EDB164059DE00737A50 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		5BC18EDD164059F100737A50 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		5BC18EEB1645449D00737A50 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		5BDA7324172CA54900EE2FA1 /* overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay.png; sourceTree = "<group>"; };
+		5BDA7326172CA62500EE2FA1 /* overlay2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay2.png; sourceTree = "<group>"; };
+		5BDA732A172D339C00EE2FA1 /* LocationRetrieval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationRetrieval.h; sourceTree = "<group>"; };
+		5BDA732B172D339C00EE2FA1 /* LocationRetrieval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationRetrieval.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +195,8 @@
 		5B0D3C561638919A00E70D73 /* masterAR */ = {
 			isa = PBXGroup;
 			children = (
+				5BDA7329172D337D00EE2FA1 /* Location */,
+				5BDA7328172D336400EE2FA1 /* L */,
 				5BB0552F172C151700FADB99 /* BIM */,
 				5B900CE01729E18100BCA59B /* VisualizationData */,
 				5B900C75172920F000BCA59B /* Filter */,
@@ -250,6 +270,12 @@
 		5B9D71D2167CF36A00A13564 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				5BB0553C172C88C900FADB99 /* MapOverlayView.h */,
+				5BB0553D172C88CA00FADB99 /* MapOverlayView.m */,
+				5BB05539172C833500FADB99 /* MapOverlay.h */,
+				5BB0553A172C833500FADB99 /* MapOverlay.m */,
+				5BB05536172C757400FADB99 /* MapData.h */,
+				5BB05537172C757400FADB99 /* MapData.m */,
 				5B9D71D3167CF39900A13564 /* MapViewController.h */,
 				5B9D71D4167CF39900A13564 /* MapViewController.m */,
 			);
@@ -259,6 +285,9 @@
 		5B9D71DE167FF8AB00A13564 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5BDA7326172CA62500EE2FA1 /* overlay2.png */,
+				5BDA7324172CA54900EE2FA1 /* overlay.png */,
+				5BB0553F172C8D3D00FADB99 /* overlay_park.png */,
 				5BB0552A172C106F00FADB99 /* viz10.png */,
 				5B900CEA172BFED500BCA59B /* viz0.png */,
 				5B900CEB172BFED500BCA59B /* viz1.png */,
@@ -290,6 +319,22 @@
 				5BB05531172C153200FADB99 /* BIMViewController.m */,
 			);
 			name = BIM;
+			sourceTree = "<group>";
+		};
+		5BDA7328172D336400EE2FA1 /* L */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = L;
+			sourceTree = "<group>";
+		};
+		5BDA7329172D337D00EE2FA1 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				5BDA732A172D339C00EE2FA1 /* LocationRetrieval.h */,
+				5BDA732B172D339C00EE2FA1 /* LocationRetrieval.m */,
+			);
+			name = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +412,9 @@
 				5B900CFC172BFED500BCA59B /* viz8.png in Resources */,
 				5B900CFD172BFED500BCA59B /* viz9.png in Resources */,
 				5BB0552B172C106F00FADB99 /* viz10.png in Resources */,
+				5BB05540172C8D3D00FADB99 /* overlay_park.png in Resources */,
+				5BDA7325172CA54900EE2FA1 /* overlay.png in Resources */,
+				5BDA7327172CA62500EE2FA1 /* overlay2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +436,10 @@
 				5B900C74172920E900BCA59B /* FilterViewController.m in Sources */,
 				5B900CE31729E1B800BCA59B /* VisualizationData.m in Sources */,
 				5BB05532172C153200FADB99 /* BIMViewController.m in Sources */,
+				5BB05538172C757400FADB99 /* MapData.m in Sources */,
+				5BB0553B172C833500FADB99 /* MapOverlay.m in Sources */,
+				5BB0553E172C88CA00FADB99 /* MapOverlayView.m in Sources */,
+				5BDA732C172D339C00EE2FA1 /* LocationRetrieval.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

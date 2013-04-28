@@ -48,7 +48,7 @@
 #import <UIKit/UIKit.h>
 #import "VisualizationData.h"
 
-@interface pARkViewController : UIViewController
+@interface pARkViewController : UIViewController <NSURLConnectionDataDelegate>
 {
     
     VisualizationData * vizData;

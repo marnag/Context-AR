@@ -49,16 +49,18 @@
 #import "PlaceOfInterest.h"
 #import "ARView.h"
 #import "FilterViewController.h"
+#import "LocationRetrieval.h"
 
 #import <CoreLocation/CoreLocation.h>
 
 @implementation pARkViewController
 
 char *poiNames[] = {
-    "viz1.png",
+/*    "viz1.png",
     "viz2.png",
     "viz3.png",
-    "viz4.png"
+    "viz4.png" */
+"","","",""
 };
 
 CLLocationCoordinate2D poiCoords[] = {
@@ -87,7 +89,9 @@ CLLocationCoordinate2D poiCoords[] = {
 	[arView setPlacesOfInterest:placesOfInterest];	
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshView:) name:@"refreshView" object:nil];
-     NSLog(@"Sett ARview");
+    
+    LocationRetrieval *locRet = [[LocationRetrieval alloc] init];
+    [locRet startFetchingData];
     
 }
 
