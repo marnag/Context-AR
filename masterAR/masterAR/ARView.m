@@ -45,7 +45,7 @@
  
  */
 
-#import "ARView.h"
+#import "ARView.h" 
 #import "PlaceOfInterest.h"
 
 #import <AVFoundation/AVFoundation.h>
@@ -217,7 +217,7 @@ void ecefToEnu(double lat, double lon, double x, double y, double z, double xr, 
 	locationManager.delegate = self;
 	locationManager.distanceFilter = 100.0;
 	[locationManager startUpdatingLocation];
-}
+ }
 
 - (void)stopLocation
 {

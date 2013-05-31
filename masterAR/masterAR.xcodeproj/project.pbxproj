@@ -44,7 +44,6 @@
 		5BB05538172C757400FADB99 /* MapData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB05537172C757400FADB99 /* MapData.m */; };
 		5BB0553B172C833500FADB99 /* MapOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0553A172C833500FADB99 /* MapOverlay.m */; };
 		5BB0553E172C88CA00FADB99 /* MapOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0553D172C88CA00FADB99 /* MapOverlayView.m */; };
-		5BB05540172C8D3D00FADB99 /* overlay_park.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0553F172C8D3D00FADB99 /* overlay_park.png */; };
 		5BC18ECF1640592100737A50 /* ARView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18EC61640592100737A50 /* ARView.m */; };
 		5BC18ED01640592100737A50 /* PlaceOfInterest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18EC81640592100737A50 /* PlaceOfInterest.m */; };
 		5BC18ED11640592100737A50 /* pARkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18ECA1640592100737A50 /* pARkViewController.m */; };
@@ -112,7 +111,6 @@
 		5BB0553A172C833500FADB99 /* MapOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapOverlay.m; sourceTree = "<group>"; };
 		5BB0553C172C88C900FADB99 /* MapOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapOverlayView.h; sourceTree = "<group>"; };
 		5BB0553D172C88CA00FADB99 /* MapOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapOverlayView.m; sourceTree = "<group>"; };
-		5BB0553F172C8D3D00FADB99 /* overlay_park.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay_park.png; sourceTree = "<group>"; };
 		5BC18EC51640592100737A50 /* ARView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARView.h; sourceTree = "<group>"; };
 		5BC18EC61640592100737A50 /* ARView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARView.m; sourceTree = "<group>"; };
 		5BC18EC71640592100737A50 /* PlaceOfInterest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceOfInterest.h; sourceTree = "<group>"; };
@@ -287,7 +285,6 @@
 			children = (
 				5BDA7326172CA62500EE2FA1 /* overlay2.png */,
 				5BDA7324172CA54900EE2FA1 /* overlay.png */,
-				5BB0553F172C8D3D00FADB99 /* overlay_park.png */,
 				5BB0552A172C106F00FADB99 /* viz10.png */,
 				5B900CEA172BFED500BCA59B /* viz0.png */,
 				5B900CEB172BFED500BCA59B /* viz1.png */,
@@ -412,7 +409,6 @@
 				5B900CFC172BFED500BCA59B /* viz8.png in Resources */,
 				5B900CFD172BFED500BCA59B /* viz9.png in Resources */,
 				5BB0552B172C106F00FADB99 /* viz10.png in Resources */,
-				5BB05540172C8D3D00FADB99 /* overlay_park.png in Resources */,
 				5BDA7325172CA54900EE2FA1 /* overlay.png in Resources */,
 				5BDA7327172CA62500EE2FA1 /* overlay2.png in Resources */,
 			);

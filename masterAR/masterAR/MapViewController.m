@@ -2,7 +2,6 @@
 //  MapViewController.m
 //  masterAR
 //
-//  Created by Martin Nagy on 12/15/12.
 //  Copyright (c) 2012 Martin Nagy. All rights reserved.
 //
 
@@ -65,17 +64,6 @@
     
     [self.myMKMapView removeOverlays:self.myMKMapView.overlays];
     [self addOverlay];
-    
-    //[self addOverlay];
-    
-    /*    CLLocationCoordinate2D zoomLocation;
-     zoomLocation.latitude = 69.653653;
-     zoomLocation.longitude = 18.959366;
-     
-     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.5*METERS_PER_MILE, 0.5*METERS_PER_MILE);
-     
-     [myMKMapView setRegion:viewRegion animated:YES];
-     */
 
     
 }

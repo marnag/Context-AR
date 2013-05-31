@@ -2,7 +2,6 @@
 //  BIMViewController.h
 //  masterAR
 //
-//  Created by Martin Nagy on 4/27/13.
 //  Copyright (c) 2013 Martin Nagy. All rights reserved.
 //
 

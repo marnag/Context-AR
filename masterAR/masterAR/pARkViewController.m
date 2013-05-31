@@ -63,12 +63,12 @@ char *poiNames[] = {
 "","","",""
 };
 
-CLLocationCoordinate2D poiCoords[] = {
-    {69.653856, 18.959567},
-    {69.653781, 18.958633},
+CLLocationCoordinate2D poiCoords[] = 
+{69.682433,18.972316};
+/*{69.653781, 18.958633};
     {69.653515, 18.959146},
     {69.653588, 18.959945}};
-
+*/
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

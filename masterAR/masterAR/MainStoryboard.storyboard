@@ -528,6 +528,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="e8o-95-BOE" firstAttribute="centerY" secondItem="MdQ-UC-1Up" secondAttribute="centerY" type="default" id="4Po-ob-4mq"/>
+                            <constraint firstItem="htG-iO-dRR" firstAttribute="top" secondItem="Xk6-zr-c6u" secondAttribute="top" constant="278" id="VlU-fa-Qam"/>
                             <constraint firstItem="8J4-cr-gMW" firstAttribute="top" secondItem="Xk6-zr-c6u" secondAttribute="top" constant="146" id="c6M-0w-Sxq"/>
                             <constraint firstItem="MdQ-UC-1Up" firstAttribute="top" secondItem="Xk6-zr-c6u" secondAttribute="top" constant="191" id="dmE-42-h7E"/>
                             <constraint firstItem="DVz-dx-l18" firstAttribute="centerX" secondItem="e8o-95-BOE" secondAttribute="centerX" type="default" id="fHS-xj-W4O"/>
@@ -535,16 +536,15 @@
                             <constraint firstItem="e8o-95-BOE" firstAttribute="leading" secondItem="Xk6-zr-c6u" secondAttribute="leading" constant="69" id="ilS-FO-5o3"/>
                             <constraint firstItem="9O1-zc-nKt" firstAttribute="leading" secondItem="Xk6-zr-c6u" secondAttribute="leading" constant="51" id="jUb-j2-Eug"/>
                             <constraint firstItem="8J4-cr-gMW" firstAttribute="centerY" secondItem="DVz-dx-l18" secondAttribute="centerY" type="default" id="qnG-4G-PKu"/>
-                            <constraint firstItem="htG-iO-dRR" firstAttribute="top" secondItem="Xk6-zr-c6u" secondAttribute="top" constant="342" id="t2n-Zi-xEb"/>
+                            <constraint firstItem="a3M-22-R23" firstAttribute="leading" secondItem="Xk6-zr-c6u" secondAttribute="leading" constant="147" id="uJH-e4-rLa"/>
                             <constraint firstItem="a3M-22-R23" firstAttribute="top" secondItem="Xk6-zr-c6u" secondAttribute="top" constant="20" symbolic="YES" type="default" id="uZe-bE-Kgi"/>
                             <constraint firstItem="9O1-zc-nKt" firstAttribute="top" secondItem="Xk6-zr-c6u" secondAttribute="top" constant="68" id="vdf-sq-1ax"/>
-                            <constraint firstItem="htG-iO-dRR" firstAttribute="centerX" secondItem="a3M-22-R23" secondAttribute="centerX" type="default" id="wRf-bq-ng0"/>
                             <constraint firstItem="8J4-cr-gMW" firstAttribute="leading" secondItem="MdQ-UC-1Up" secondAttribute="leading" type="default" id="x6L-1B-iaK"/>
-                            <constraint firstItem="htG-iO-dRR" firstAttribute="leading" secondItem="Xk6-zr-c6u" secondAttribute="leading" constant="110" id="xEk-yv-k91"/>
+                            <constraint firstItem="htG-iO-dRR" firstAttribute="leading" secondItem="Xk6-zr-c6u" secondAttribute="leading" constant="104" id="yMz-bn-ora"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Lzy-oN-Chf"/>
-                    <value key="contentSizeForViewInPopover" type="size" width="400" height="600"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="400" height="450"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOP-sh-Mrj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -640,7 +640,7 @@
                             <constraint firstItem="Zdf-rh-Okn" firstAttribute="top" secondItem="a0P-nY-VOa" secondAttribute="top" constant="9" id="wNa-Xu-vST"/>
                         </constraints>
                     </view>
-                    <value key="contentSizeForViewInPopover" type="size" width="768" height="500"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="768" height="400"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bwg-UC-9iV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
